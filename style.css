@@ -1,9 +1,7 @@
 /*
 Theme Name: sanctuary1
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Rachel Weeks
+Description: Class project for WebDev3
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,13 +39,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 12.0 Media
 	12.1 Captions
 	12.2 Galleries
+13.0 Layout
+	13.1 Header
+	13.2 Home
+	13.3 Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 1.0 Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
+	font-family: open sans, sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 }
@@ -283,6 +285,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: arvo, serif;
 }
 
 p {
@@ -339,6 +342,33 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.home {
+	color: white;
+	background-color: black;
+}
+
+#masthead {
+	color: white;
+}
+
+.site-title {
+	font-size: 5em;
+	margin: 5px 0 0 80px;
+	position: relative;
+	letter-spacing: 3px;
+	line-height: .95em;
+}
+
+.site-description {
+	font-family: Open sans condensed;
+	position: relative;
+	margin: 0 0 1px 80px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	line-height: .7em;
+	font-size: 1.6em;
 }
 
 /*--------------------------------------------------------------
@@ -516,14 +546,27 @@ a:active {
 	outline: 0;
 }
 
+#masthead a {
+	color: white;
+	text-decoration: none;
+}
+
+
+
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	font-family: Arvo;
 	clear: both;
 	display: block;
-	float: left;
+	float: right;
 	width: 100%;
+	text-transform: uppercase;
+	padding: 10px 20px 10px 0;
+	background-color: black;
+	position: relative;
+	top: 40px;
 }
 
 .main-navigation ul {
@@ -533,13 +576,15 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
+	float: right;
 	position: relative;
+	padding: 20px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: white;
 }
 
 .main-navigation ul ul {
@@ -585,6 +630,8 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a {
 }
+
+
 
 /* Small menu. */
 .menu-toggle {
@@ -882,3 +929,43 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+13.0 Layout
+--------------------------------------------------------------*/
+
+.home img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#main {
+	position: absolute;
+	z-index: 1;
+}
+
+#masthead {
+	position: fixed;
+	width: 100%;
+}
+
+.site-branding {
+	position: absolute;
+	z-index: 99;
+}
+
+
+
+/*--------------------------------------------------------------
+13.1 Header
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+13.2 Footer
+--------------------------------------------------------------*/

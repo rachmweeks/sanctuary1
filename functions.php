@@ -50,8 +50,10 @@ function sanctuary1_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'sanctuary1' ),
+		'primary' =>('Main'),
 	) );
+	
+	
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -103,6 +105,12 @@ function sanctuary1_scripts() {
 	wp_enqueue_style( 'sanctuary1-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'sanctuary1-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	
+	/* FONTS HERE */
+	wp_enqueue_style( 'arvo', 'http://fonts.googleapis.com/css?family=Arvo:400,700', false, false, 'all' );
+	wp_enqueue_style( 'open sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700', false, false, false );
+	wp_enqueue_style( 'open sans condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', false, false, false );
+	wp_enqueue_style( 'font awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'sanctuary1-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
