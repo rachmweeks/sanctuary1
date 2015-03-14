@@ -144,3 +144,31 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/*
+ADDED CUSTOM POST TYPES
+*/
+
+add_action( 'init', 'create_my_post_types' );
+
+function create_my_post_types() {
+	register_post_type( 'studio_cabin', 
+		array(
+			'labels' => array(
+				'name' => __( 'Studio Cabins' ),
+				'singular_name' => __( 'Studio Cabin' ),
+				'add_new' => __( 'Add New Cabin' ),
+				'add_new_item' => __( 'New Studio Cabin' )
+				
+			'supports' => array( 'title', 'editor', 'custom-fields' ),
+	
+			),
+			'public' => true,
+		)
+	);
+}
+
+
+
+
