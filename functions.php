@@ -159,11 +159,9 @@ function create_my_post_types() {
 				'name' => __( 'Studio Cabins' ),
 				'singular_name' => __( 'Studio Cabin' ),
 				'add_new' => __( 'Add New Cabin' ),
-				'add_new_item' => __( 'New Studio Cabin' )
-				
-			'supports' => array( 'title', 'editor', 'custom-fields' ),
-	
+				'add_new_item' => __( 'New Studio Cabin' )	
 			),
+			'supports' => array( 'title', 'editor', 'custom-fields' ),
 			'public' => true,
 		)
 	);
