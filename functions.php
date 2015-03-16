@@ -153,7 +153,7 @@ ADDED CUSTOM POST TYPES
 add_action( 'init', 'create_my_post_types' );
 
 function create_my_post_types() {
-	register_post_type( 'studio_cabin', 
+	register_post_type( 'studio-cabin', 
 		array(
 			'labels' => array(
 				'name' => __( 'Studio Cabins' ),
