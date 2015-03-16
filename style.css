@@ -957,6 +957,7 @@ object {
 .site-branding {
 	position: absolute;
 	z-index: 99;
+	width: 100%;
 }
 
 .single-studio_cabin {
@@ -983,7 +984,8 @@ main {
 #masthead {
 	position: fixed;
 	width: 100%;
-	z-index: 9999;
+	z-index: 999;
+	left: 0;
 }
 
 /*--------------------------------------------------------------

@@ -10,7 +10,7 @@ Template Name: Studio Cabin
 <main id="cabinpage">
 
 	<section class="cabinphoto">
-		<?php if (function_exists('slideshow')) { slideshow($output = true, $post_id = false, $gallery_id = false, $params = array()); } ?>
+		<?php if (function_exists('slideshow')) { slideshow($output = true, $post_id = false, $gallery_id="2", $params = array()); } ?>
 	</section>
 
 	<section class="cabinpage">
