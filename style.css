@@ -371,6 +371,11 @@ big {
 	font-size: 1.6em;
 }
 
+.cabinpage {
+	color: black;
+	float: right;
+}
+
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -584,7 +589,6 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: white;
 }
 
 .main-navigation ul ul {
@@ -606,16 +610,19 @@ a:active {
 }
 
 .main-navigation ul ul li {
-
+	color: black;
 }
 
 .main-navigation li:hover > a {
+	color: black;
 }
 
 .main-navigation ul ul :hover > a {
+	color: black;
 }
 
 .main-navigation ul ul a:hover {
+	color: black;
 }
 
 .main-navigation ul li:hover > ul {
@@ -638,7 +645,7 @@ a:active {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
@@ -959,6 +966,20 @@ object {
 	z-index: 99;
 }
 
+.single-studio_cabin {
+	background-image: url(http://localhost:8888/sanctuary/wp-content/uploads/2015/03/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+main {
+	background-color: white;
+	width: 80%;
+	height: 600px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 /*--------------------------------------------------------------
